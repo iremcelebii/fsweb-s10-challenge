@@ -3,8 +3,16 @@ import { Switch, Route, NavLink } from "react-router-dom";
 import PostForm from "./components/PostForm";
 import PostList from "./components/PostList";
 import Img from "./assets/gratitude.jpg";
-
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { fromLocal } from "./actions";
 export default function App() {
+  const dispatch = useDispatch();
+  //!localstorage için 8.adım
+  useEffect(() => {
+    dispatch(fromLocal());
+  }, []);
+
   return (
     <div>
       <div className="bg-white shadow mb-8">

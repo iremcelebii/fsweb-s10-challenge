@@ -1,7 +1,13 @@
 import axios from "axios";
-
 export const NOT_EKLE = "NOT_EKLE";
 export const NOT_SIL = "NOT_SIL";
+//!localstorage için 5.adım
+export const FROM_LOCAL = "FROM_LOCAL";
+
+//!localstorage için 6.adım
+export function fromLocal() {
+  return { type: FROM_LOCAL };
+}
 
 export function notEkle(not) {
   return { type: NOT_EKLE, payload: not };
