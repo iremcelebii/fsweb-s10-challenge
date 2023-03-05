@@ -32,10 +32,10 @@ export function myReducer(state = baslangicDegerleri, action) {
   switch (action.type) {
     case NOT_EKLE:
       //!localstorage için 2.adım
-      localStorageStateYaz(s10chLocalStorageKey, [
-        ...state.notlar,
-        action.payload,
-      ]);
+      localStorageStateYaz(s10chLocalStorageKey, {
+        ...state,
+        notlar: [...state.notlar, action.payload],
+      });
       return { ...state, notlar: [...state.notlar, action.payload] };
 
     case NOT_SIL:
@@ -43,15 +43,15 @@ export function myReducer(state = baslangicDegerleri, action) {
         (note) => note.id !== action.payload
       );
       //!localstorage için 3.adım
-      localStorageStateYaz(s10chLocalStorageKey, [filtrelenmisNotlar]);
+      localStorageStateYaz(s10chLocalStorageKey, {
+        ...state,
+        notlar: filtrelenmisNotlar,
+      });
 
       return { ...state, notlar: filtrelenmisNotlar };
     //!localstorage için 7.adım
     case FROM_LOCAL:
-      return {
-        ...state,
-        notlar: baslangicNotlariniGetir(s10chLocalStorageKey),
-      };
+      return baslangicNotlariniGetir(s10chLocalStorageKey);
 
     default:
       return state;
