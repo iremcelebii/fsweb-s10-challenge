@@ -20,11 +20,11 @@ Bu günlük içerisinde daha önce eklenmiş notlar listelenmeli, notlar silineb
 
 ### Görev 1: Proje Kurulumu
 
-- [ ] Forklayın.
-- [ ] Klonlayın
-- [ ] Ana dizine gidin
-- [ ] `npm install`
-- [ ] `npm start`
+- [x] Forklayın.
+- [x] Klonlayın
+- [x] Ana dizine gidin
+- [x] `npm install`
+- [x] `npm start`
 
 ### Görev 2: Proje Gereksinimleri
 
@@ -32,21 +32,21 @@ Yeni not ekleme ve silme işlemi esnasında bir API'ye request atılmalı ve gel
 
 LocalStorage'ı minik bir veritabanı olarak kullanmak için uygulama eğer varsa daha önce localStorage'a kaydedilmiş verilerle başlatılmalı ve `redux store`'unda yapılan her değişiklik localStorage'a da yansıtılmalıdır.
 
-- [ ] Projeyi inceleyin ve componentlar arasındaki ilişkiyi bulun.
+- [x] Projeyi inceleyin ve componentlar arasındaki ilişkiyi bulun.
 
-- [ ] `actions.js` dosyasını inceleyin, kod eklemeniz gereken yerleri bulun.
+- [x] `actions.js` dosyasını inceleyin, kod eklemeniz gereken yerleri bulun.
 
-- [ ] `reducers.js` dosyası içerisinde store oluştururken kullanacağınız `reducer` fonksiyonunuzu `actions.js` dosyasına göre oluşturun. State başlangıç değerleri için şimdilik `baslangicDegerleri` ni kullanabilirsiniz.
+- [x] `reducers.js` dosyası içerisinde store oluştururken kullanacağınız `reducer` fonksiyonunuzu `actions.js` dosyasına göre oluşturun. State başlangıç değerleri için şimdilik `baslangicDegerleri` ni kullanabilirsiniz.
 
-- [ ] `redux`, `react-redux` ve `redux-thunk` paketlerini projenize ekleyin ve `index.js` dosyası içerisinde redux store unuzu oluşturun. redux-thunk paketini middleware olarak eklemeyi unutmayın.
+- [x] `redux`, `react-redux` ve `redux-thunk` paketlerini projenize ekleyin ve `index.js` dosyası içerisinde redux store unuzu oluşturun. redux-thunk paketini middleware olarak eklemeyi unutmayın.
 
-- [ ] `PostList.js` dosyasında listelemek üzere store içerisindeki notları `useSelector` kullanarak alın ve `notlar` arrayine eşitleyin.
+- [x] `PostList.js` dosyasında listelemek üzere store içerisindeki notları `useSelector` kullanarak alın ve `notlar` arrayine eşitleyin.
 
-- [ ] `PostForm.js` dosyasındaki form submit edildiğinde, actions içerisinden `notEkleAPI` actionunu, formun verisi ile dispatch edin. Bu kısmı ekledikten sonra `actions.js` dosyasında gerekli değişiklikleri, yönergeleri takip ederek yapın.
+- [x] `PostForm.js` dosyasındaki form submit edildiğinde, actions içerisinden `notEkleAPI` actionunu, formun verisi ile dispatch edin. Bu kısmı ekledikten sonra `actions.js` dosyasında gerekli değişiklikleri, yönergeleri takip ederek yapın.
 
-- [ ] `Post.js` içerisinde silme eylemini not id si ile dispatch edin ve yine `actions.js` dosyasında gerekli değişiklikleri, yönergeleri takip ederek yapın.
+- [x] `Post.js` içerisinde silme eylemini not id si ile dispatch edin ve yine `actions.js` dosyasında gerekli değişiklikleri, yönergeleri takip ederek yapın.
 
-- [ ] Ekleme ve silme işlemlerinden sonra kullanıcıya geri bildirim vermek için `react-toastify` paketini kullanın.
+- [x] Ekleme ve silme işlemlerinden sonra kullanıcıya geri bildirim vermek için `react-toastify` paketini kullanın.
 
 ### Görev 3: Redux store'u localStorage içerisindeki verilerle başlatmak
 
